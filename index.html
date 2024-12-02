@@ -3,19 +3,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simple Text Website</title>
+    <title>乃ㄖ几丂ㄖㄥ</title>
     <style>
+        /* Monospace styling */
         body {
-            font-family: "Courier New", Courier, monospace;
+            font-family: 'Courier New', Courier, monospace;
+            line-height: 1.6;
             margin: 0;
-            padding: 20px;
-            background-color: #f4f4f4;
+            background: #fff;
             color: #333;
+            padding: 2rem;
+            margin: 0 auto;
+        }
+
+        /* Content styling */
+        .content {
+            background: #fff;
+            padding: 0;
+            border: none;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        pre {
+            background: #fff;
+            padding: 0;
+            overflow-x: auto;
+            margin: 0;
+        }
+
+        /* Simplified Navigation styling */
+        .nav {
+            background: #fff;
+            padding: 0 0 1rem 0;
+            border: none;
+        }
+
+        .nav a {
+            color: #333;
+            text-decoration: none;
+            margin-right: 2rem;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        .nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* Add to existing nav styles */
+        .nav a.active {
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
-    <h1>Welcome to My Simple Text Website</h1>
-    <p>This is a simple text-based website styled with monospace fonts.</p>
+    <div class="content">
+        <nav class="nav">
+            <a href="#home" class="active">Home</a>
+            <a href="about.html">About</a>
+            <a href="token.html">$BON</a>
+            <a href="https://bonsol.sh/" target="_blank">Docs</a>
+            <a href="https://x.com/Bonsolsh" target="_blank">X</a>
+        </nav>
+
+        <h1>乃ㄖ几丂ㄖㄥ</h1>
+        
+        <pre>
+            Solana is evolving into a ZK-powered L1.
+        </pre>
+
+        <p>Solana stands out as a highly capable Layer 1 (L1) blockchain, especially for those looking to develop zero-knowledge (ZK) applications.</p>
+
+        <p>A key aspect of Solana's suitability for ZK applications is its runtime support for elliptic curve operations. Elliptic curve cryptography (ECC) is a cornerstone in the construction of ZK proofs, which enable one party to prove the truth of a statement to another party without revealing any underlying data. Solana's native support for these operations significantly simplifies the development process, allowing for more efficient and secure implementation of ZK proofs.</p>
+
+        <p>Another major advantage of Solana is its low fee compute and transaction model. In the blockchain world, transaction costs can be a substantial hurdle, affecting scalability and user adoption. Solana addresses this challenge with its high-throughput consensus mechanism, which facilitates fast and cost-effective transactions. This efficiency is particularly interesting when compounded with ZK, offering a pathway towards ultra-low latency applications with completely new privacy and security guarantees.</p>
+
+        <p>Moreover, Solana offers innovative solutions for managing state in ZK applications. In instances where applications cannot fully utilize Solana's new syscalls for curves, the platform's low transaction costs come to the rescue. Developers can leverage these low costs to process verifier computations over state efficiently. This approach allows for the recording of necessary data and the subsequent removal of excess state, optimizing the application's performance and resource usage.</p>
+
+        <p>In summary, Solana presents a compelling combination of technical capabilities for ZK application development. Its support for elliptic curve operations, coupled with a low-cost transaction model, makes it an attractive platform for developers looking to explore the frontiers of privacy and verifiable computation. The platform's features speak for themselves, positioning it as a leading choice for building sophisticated and efficient ZK applications.</p>
+    </div>
 </body>
 </html>
